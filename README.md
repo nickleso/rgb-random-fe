@@ -1,3 +1,5 @@
 # rgb_randomizer
 
-RGB Randomizer.
+RGB Randomizer
+
+Includes solid_lints
