@@ -1,3 +1,3 @@
 # rgb_randomizer
 
-GRB Randomizer.
+RGB Randomizer.
