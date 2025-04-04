@@ -1,1 +1,3 @@
-# rgb-random-fe
+# rgb_randomizer
+
+GRB Randomizer.
