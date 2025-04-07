@@ -1,19 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:rgb_randomizer/pages/home_page.dart';
+import 'package:rgb_randomizer/theme.dart';
 
 void main() {
   runApp(const MainApp());
 }
 
+/// RGB Randomizer application root widget
+/// based on Flutter Empty template and Material library
 class MainApp extends StatelessWidget {
+  /// StatelessWidget class constructor
   const MainApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'RGB Randomizer',
+      theme: RgbRandomizerTheme.themeData(),
+      home: const Scaffold(
+        body: HomePage(),
       ),
     );
   }
