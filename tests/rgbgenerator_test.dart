@@ -4,7 +4,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rgb_randomizer/utils/generate_rgb.dart';
+import 'package:rgb_randomizer/core/utils/generate_rgb.dart';
 
 void main() {
   test('RGB random generator returns partial colors in range 0-255', () async {

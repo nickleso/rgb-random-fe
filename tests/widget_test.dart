@@ -15,7 +15,6 @@ void main() {
   testWidgets('App has correct text and initial background',
       (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    print('Await App launch');
     await tester.pumpWidget(const MainApp());
 
     // Verify that App includes 'Hello there' text.

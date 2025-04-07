@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:rgb_randomizer/pages/home_page.dart';
-import 'package:rgb_randomizer/theme.dart';
+import 'package:rgb_randomizer/core/theme/theme.dart';
+import 'package:rgb_randomizer/features/rgb/presentation/pages/home_page.dart';
 
 void main() {
   runApp(const MainApp());

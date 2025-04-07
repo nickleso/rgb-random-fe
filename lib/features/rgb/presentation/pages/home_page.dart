@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:rgb_randomizer/pages/widgets/hud_visibility_button.dart';
-import 'package:rgb_randomizer/pages/widgets/text_container.dart';
-import 'package:rgb_randomizer/utils/generate_rgb.dart';
+import 'package:rgb_randomizer/core/utils/generate_rgb.dart';
+import 'package:rgb_randomizer/features/rgb/presentation/widgets/hud_visibility_button.dart';
+import 'package:rgb_randomizer/features/rgb/presentation/widgets/text_container.dart';
 
 /// Home screen which onTap renders background with random RGB color
 /// and text info with greetings text and RGB color info

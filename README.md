@@ -9,5 +9,7 @@ By tapping on devices screen you got new pseudo randomly generated RGB color.
 # Tests
 
 Run all tests: flutter test tests
+
 Run widgets tests: flutter test tests/widget_test.dart
+
 Run unit tests: flutter test tests/rgbgenerator_test.dart
