@@ -8,7 +8,7 @@ class TextContainer extends StatelessWidget {
     super.key,
   });
 
-  /// Required argument
+  /// Required argument - displayed sting text
   final String text;
 
   @override

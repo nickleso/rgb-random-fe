@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rgb_randomizer/pages/widgets/hud_visibility_button.dart';
 import 'package:rgb_randomizer/pages/widgets/text_container.dart';
 import 'package:rgb_randomizer/utils/generate_rgb.dart';
 
@@ -14,6 +15,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   Color _backgroundColor = const Color.fromRGBO(255, 255, 255, 1);
+  bool isVisibleHUD = true;
 
   @override
   Widget build(BuildContext context) {
@@ -22,19 +24,33 @@ class _HomePageState extends State<HomePage> {
         _backgroundColor = generatePseudoRandomRGB();
       }),
       child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 36),
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 36),
         decoration: BoxDecoration(
           color: _backgroundColor,
         ),
         child: Center(
           child: Column(
             children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  HudVisibilityButton(
+                    isVisibleHUD: isVisibleHUD,
+                    onPressed: () => setState(() {
+                      isVisibleHUD = !isVisibleHUD;
+                    }),
+                  ),
+                ],
+              ),
               const Spacer(),
-              const TextContainer(text: 'Hello there'),
+              if (isVisibleHUD) const TextContainer(text: 'Hello there'),
               const Spacer(),
-              TextContainer(
-                  text:
-                      'RGB ${_backgroundColor.red}, ${_backgroundColor.green}, ${_backgroundColor.blue}'),
+              if (isVisibleHUD)
+                TextContainer(
+                  text: 'RGB ${_backgroundColor.red}, '
+                      '${_backgroundColor.green}, '
+                      '${_backgroundColor.blue}',
+                ),
             ],
           ),
         ),
