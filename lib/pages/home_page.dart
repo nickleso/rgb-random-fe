@@ -24,6 +24,7 @@ class _HomePageState extends State<HomePage> {
         _backgroundColor = generatePseudoRandomRGB();
       }),
       child: Container(
+        key: const Key('background'),
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 36),
         decoration: BoxDecoration(
           color: _backgroundColor,
